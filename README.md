@@ -104,14 +104,18 @@ Training was performed on the **NasalSeg** dataset — the first large-scale, pu
 
 ### 📊 Results (5-fold cross-validation)
 
-| Fold | DSC (%) |
-|------|---------|
-| Fold 0 | 56.25 |
-| Fold 1 | 65.70 |
-| Fold 2 | 62.31 |
-| Fold 3 | 58.73 |
-| Fold 4 | 49.76 |
-| **Average** | **58.55** |
+Dice Similarity Coefficient (DSC) per structure and fold:
+
+| Structure | Fold 0 | Fold 1 | Fold 2 | Fold 3 | Fold 4 | **Mean** |
+|-----------|:------:|:------:|:------:|:------:|:------:|:--------:|
+| Right Maxillary Sinus | 0.630 | 0.767 | 0.769 | 0.705 | 0.633 | **0.701** |
+| Left Maxillary Sinus  | 0.602 | 0.789 | 0.768 | 0.678 | 0.658 | **0.699** |
+| Right Nasal Cavity    | 0.587 | 0.748 | 0.762 | 0.721 | 0.686 | **0.701** |
+| Left Nasal Cavity     | 0.583 | 0.746 | 0.759 | 0.706 | 0.684 | **0.696** |
+| Nasopharynx           | 0.969 | 0.963 | 0.974 | 0.969 | 0.959 | **0.967** |
+| **Overall Mean**      | **0.674** | **0.803** | **0.806** | **0.756** | **0.724** | **0.753** |
+
+> The nasopharynx achieved the highest DSC (mean 0.967), while sinus and nasal cavity structures presented greater variability across folds, consistent with their anatomical complexity.
 
 ### 🔬 For Developers — Reproduce or Retrain
 
@@ -246,14 +250,18 @@ O **nnU-Net** é um framework de segmentação auto-configurável que adapta aut
 
 ### 📊 Resultados (validação cruzada em 5 folds)
 
-| Fold | DSC (%) |
-|------|---------|
-| Fold 0 | 56,25 |
-| Fold 1 | 65,70 |
-| Fold 2 | 62,31 |
-| Fold 3 | 58,73 |
-| Fold 4 | 49,76 |
-| **Média** | **58,55** |
+Coeficiente de Similaridade de Dice (DSC) por estrutura e fold:
+
+| Estrutura | Fold 0 | Fold 1 | Fold 2 | Fold 3 | Fold 4 | **Média** |
+|-----------|:------:|:------:|:------:|:------:|:------:|:---------:|
+| Seio Maxilar Direito  | 0,630 | 0,767 | 0,769 | 0,705 | 0,633 | **0,701** |
+| Seio Maxilar Esquerdo | 0,602 | 0,789 | 0,768 | 0,678 | 0,658 | **0,699** |
+| Cavidade Nasal Direita  | 0,587 | 0,748 | 0,762 | 0,721 | 0,686 | **0,701** |
+| Cavidade Nasal Esquerda | 0,583 | 0,746 | 0,759 | 0,706 | 0,684 | **0,696** |
+| Nasofaringe           | 0,969 | 0,963 | 0,974 | 0,969 | 0,959 | **0,967** |
+| **Média Geral**       | **0,674** | **0,803** | **0,806** | **0,756** | **0,724** | **0,753** |
+
+> A nasofaringe obteve o maior DSC (média 0,967), enquanto os seios maxilares e as cavidades nasais apresentaram maior variabilidade entre os folds, o que é consistente com a complexidade anatômica dessas estruturas.
 
 ### 🔬 Para Desenvolvedores — Reproduzir ou Retreinar
 
