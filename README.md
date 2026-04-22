@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 🫁 Nasal Cavity & Paranasal Sinuses Segmentation with nnU-Net
+# 👃🏽 Nasal Cavity & Paranasal Sinuses Segmentation with nnU-Net
 
 **🌐 Language / Idioma:**
 [🇺🇸 English](#english) · [🇧🇷 Português](#português)
